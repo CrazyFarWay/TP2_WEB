@@ -49,12 +49,12 @@
     </header>
 
     <main>
-        <div class="container-fluid">
+        <div class="container-fluid px-4">
 
-            <div class="row justify-content-center align-items-center g-2" id="cardResultado">
-                <div class= "col-lg-6">
+            <div class="row justify-content-center">
+                <div class= "col-lg-6 col-xs-12 border border-1 border-dark rounded p-3 mx-4">
 
-                    
+                    <h4>Gestión de Estudiantes</h4>
 
                     <table class="table">
                         <tr>
@@ -70,8 +70,8 @@
                             <td>Esteban Nicolás</td>
                             <td>7</td>
                             <td>
-                                <button type="button" class="btn btn-light m-1 w-50 p-2" id="buttonListadoUsuarios">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
+                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
                                 </button>
                             </td>
                         </tr>
@@ -81,19 +81,54 @@
                             <td>Valentina</td>
                             <td>8</td>
                             <td>
-                                <button type="button" class="btn btn-light m-1 w-50 p-2" id="buttonListadoUsuarios">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
+                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>49894</td>
+                            <td>Sánchez</td>
+                            <td>Esteban Nicolás</td>
+                            <td>9</td>
+                            <td>
+                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
+                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
                                 </button>
                             </td>
                         </tr>
 
                     </table>
+                </div>
 
-                    
-
-
+                <div class="col-lg-4 col-xs-12 border border-1 border-dark rounded p-3 mx-4">
+                    <h4>Agregar Estudiantes</h4>
+                    <form class="d-flex flex-column">
+                        <div class="my-2">
+                            <p>Legajo</p>
+                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                        </div>
+                        <div class="my-2">
+                            <p>Apellidos</p>
+                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                        </div>
+                        <div class="my-2">
+                            <p>Nombres</p>
+                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                        </div>
+                        <div class="my-2">
+                            <p>Notas</p>
+                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                        </div>
+                        
+                        <button type="button" class="btn btn-dark w-25 my-2" id="botonAgregar">
+                            Agregar
+                        </button>
+                    </form>
 
                 </div>
+
+
             </div>
         </div>
 
