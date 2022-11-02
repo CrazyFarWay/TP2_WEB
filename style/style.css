@@ -1,0 +1,70 @@
+#buscadorProducto {
+    flex-wrap: nowrap;
+}
+
+@media (max-width:768px) {
+    #MainPrincipalContainer, #whoAreWeMainRow {
+        width: 100% !important;
+    }
+
+    .columnaDescripcion {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+    #MainPrincipalContainer, #whoAreWeMainRow {
+        width: 90% !important;
+    }
+    
+}
+
+@media (min-width:992px) {
+    #MainPrincipalContainer, #whoAreWeMainRow {
+        width: 75% !important;
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@1,700&family=Righteous&family=Silkscreen:wght@400;700&display=swap');
+
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+}
+
+#footerEmpresa {
+    font-family: 'Righteous', cursive;
+}
+
+#tituloPrincipal {
+    font-family: 'Noticia Text', serif;
+}
+
+#tituloProductos {
+    font-family: 'Noticia Text', serif;
+}
+
+/* Style de Quienes Somos */
+
+.card-header {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+
+.card {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+}
