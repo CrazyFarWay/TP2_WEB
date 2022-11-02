@@ -33,9 +33,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                     <div class="navbar-nav">
                         <a class="nav-link" href="">Gestión de Estudiantes</a>
-                        <a class="nav-link active" href="listadoDeUsuarios.html" aria-current="page"> Listado de Usuarios <span class="visually-hidden">(current)</span></a>
-                        <a class="nav-link" href="buscadorShowsTV.html">Buscador de Shows de TV</a>
-
+                        <a class="nav-link" href="listadoDeUsuarios.html"> Listado de Usuarios</a>
+                        <a class="nav-link active" href="buscadorShowsTV.html" aria-current="page">Buscador de Shows de TV <span class="visually-hidden">(current)</span></a>
                     </div>
                 </div>
             </div>
@@ -43,7 +42,7 @@
         <nav class="breadcrumb">
             <ol class="breadcrumb container-fluid ps-3 py-1">
                 <li class="breadcrumb-item"><a href="">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Listado de Usuarios</li>
+                <li class="breadcrumb-item active" aria-current="page">Buscador de Shows de TV</li>
             </ol>
         </nav>
     </header>
@@ -55,19 +54,18 @@
 
                 <div class="col-xs-12 col-md">
                     <form class="d-flex">
-                        <input class="form-control m-1" type="text" placeholder="" id="numeroListadoUsuarios">
+                        <input class="form-control m-1" type="text" placeholder="" id="buscadorShow">
                     </form>
                 </div>
                 <div class="col-xs-12 col-md-2">
-                    <button type="button" class="btn btn-light m-1 w-100 p-2" id="buttonListadoUsuarios">
+                    <button type="button" class="btn btn-light m-1 w-100 p-2" id="buttonBuscadorShow">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                 </div>
 
             </div>
 
-
-            <div class="row justify-content-center align-items-center g-2" id="cardResultado">
+            <div class="row justify-content-center g-2" id="cardResultado">
 
             </div>
         </div>
@@ -80,7 +78,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
-    <script src="js/listadoDeUsuarios.js"></script>
+    <script src="js/buscadorShowsTV.js"></script>
 
 </body>
 
