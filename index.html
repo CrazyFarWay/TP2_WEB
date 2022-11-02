@@ -56,47 +56,8 @@
 
                     <h4>Gestión de Estudiantes</h4>
 
-                    <table class="table">
-                        <tr>
-                            <th>Legajo</th>
-                            <th>Apellidos</th>
-                            <th>Nombres</th>
-                            <th>Nota</th>
-                            <th>Acciones</th>
-                        </tr>
-                        <tr>
-                            <td>49894</td>
-                            <td>Sánchez</td>
-                            <td>Esteban Nicolás</td>
-                            <td>7</td>
-                            <td>
-                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
-                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>50333</td>
-                            <td>Saccone</td>
-                            <td>Valentina</td>
-                            <td>8</td>
-                            <td>
-                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
-                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>49894</td>
-                            <td>Sánchez</td>
-                            <td>Esteban Nicolás</td>
-                            <td>9</td>
-                            <td>
-                                <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
-                                    <i class="fa-solid fa-trash text-light" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                        </tr>
+                    <table class="table" id="tablaAlumnos">
+                        
 
                     </table>
                 </div>
@@ -106,19 +67,19 @@
                     <form class="d-flex flex-column">
                         <div class="my-2">
                             <p>Legajo</p>
-                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                            <input class="form-control" type="text" placeholder="" id="legajo">
                         </div>
                         <div class="my-2">
                             <p>Apellidos</p>
-                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                            <input class="form-control" type="text" placeholder="" id="apellidos">
                         </div>
                         <div class="my-2">
                             <p>Nombres</p>
-                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                            <input class="form-control" type="text" placeholder="" id="nombres">
                         </div>
                         <div class="my-2">
-                            <p>Notas</p>
-                            <input class="form-control" type="text" placeholder="" id="numeroListadoUsuarios">
+                            <p>Nota</p>
+                            <input class="form-control" type="text" placeholder="" id="nota">
                         </div>
                         
                         <button type="button" class="btn btn-dark w-25 my-2" id="botonAgregar">
