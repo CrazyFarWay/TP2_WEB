@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a178bb34c.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" width="30" height="30">
+                    Empresa
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html" aria-current="page"> Gestión de Estudiantes <span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link" href="listadoDeUsuarios.html">Listado de Usuarios</a>
+                        <a class="nav-link" href="buscadorShowsTV.html">Buscador de Shows de TV</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="breadcrumb">
+            <ol class="breadcrumb container-fluid ps-3 py-1">
+                <li class="breadcrumb-item"><a href="">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Gestión de Estudiantes</li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+
+            <div class="row justify-content-center align-items-center g-2" id="cardResultado">
+                <div class= "col-lg-6">
+
+                    
+
+                    <table class="table">
+                        <tr>
+                            <th>Legajo</th>
+                            <th>Apellidos</th>
+                            <th>Nombres</th>
+                            <th>Nota</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>49894</td>
+                            <td>Sánchez</td>
+                            <td>Esteban Nicolás</td>
+                            <td>7</td>
+                            <td>
+                                <button type="button" class="btn btn-light m-1 w-50 p-2" id="buttonListadoUsuarios">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>50333</td>
+                            <td>Saccone</td>
+                            <td>Valentina</td>
+                            <td>8</td>
+                            <td>
+                                <button type="button" class="btn btn-light m-1 w-50 p-2" id="buttonListadoUsuarios">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
