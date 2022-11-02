@@ -25,9 +25,9 @@ window.addEventListener('DOMContentLoaded',()=>{
         let tmpHtml=''
         arrayShows.forEach(s => {
             
-            const {show:{name,type,language,genres:genres,status,image:{original},summary}}=s
+            const {show:{name,type,language,genres:genres,status,rating:{average},image:{original},summary}}=s
             tmpHtml+=`
-            <div class="col-lg-15 col-md-4 col-xs-12">
+            <div class="card-col col-md-4 col-xs-12">
                 <div class="card mb-5 bg-body rounded">
                     <img src="${original}" class="card-img-top" alt="Foto de ${name}">
                     <h5 class="card-header text-dark">${name}</h5>
@@ -41,17 +41,22 @@ window.addEventListener('DOMContentLoaded',()=>{
                                 <span> ${type}</span>
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <i class="fa-solid fa-language" aria-hidden="true"></i>
                                 <span class="fw-bold">Idioma: </span>
                                 <span> ${language}</span>
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <i class="fa-solid fa-genderless" aria-hidden="true"></i>
                                 <span class="fw-bold">Generos: </span>
                                 <span> ${genres} </span>
                             </li>
                             <li class="list-group-item">
-                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                <span class="fw-bold">Rating: </span>
+                                <span> ${average} </span>
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa-sharp fa-solid fa-signal" aria-hidden="true"></i>
                                 <span class="fw-bold">Estado: </span>
                                 <span> ${status} </span>
                             </li>

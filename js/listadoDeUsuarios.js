@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded',()=>{
             .then(response => response.json()) //metodo json del objeto response
             .then(jsonData => {
                 console.log(jsonData)
-                usuarios = jsonData.results;
                 render(jsonData.results)
             }) //datos convertidos a un objeto js
             .catch(error => console.log(error))

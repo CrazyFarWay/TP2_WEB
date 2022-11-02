@@ -4,7 +4,7 @@
 
 @media (max-width:768px) {
     #MainPrincipalContainer, #whoAreWeMainRow {
-        width: 100% !important;
+        width: 100%;
     }
 
     .columnaDescripcion {
@@ -14,13 +14,13 @@
 
 @media (min-width:768px) and (max-width:992px) {
     #MainPrincipalContainer, #whoAreWeMainRow {
-        width: 90% !important;
+        width: 90%;
     }
 }
 
 @media (min-width:992px) {
     #MainPrincipalContainer, #whoAreWeMainRow {
-        width: 75% !important;
+        width: 75%;
     }
 }
 
@@ -68,8 +68,7 @@
 }
 
 @media (min-width: 1200px) {
-    .col-lg-15 {
+    .card-col {
         width: 20%;
-        float: left;
     }
 }
