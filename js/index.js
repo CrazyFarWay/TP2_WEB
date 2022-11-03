@@ -1,9 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
 
     const botonAgregar = document.getElementById("botonAgregar");
-    const botonEliminar = document.getElementById("botonEliminar");
 
-    const alumnos = [
+    let alumnos = [
         {
             "legajo": "50333",
             "apellidos": "Saccone",
@@ -24,9 +23,8 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     ]
 
-    
-
-    botonAgregar.addEventListener("click", () => {
+    botonAgregar.addEventListener("click", (e) => {
+        console.log("Evento", e);
         const legajo = document.getElementById("legajo").value;
         const apellidos = document.getElementById("apellidos").value;
         const nombres = document.getElementById("nombres").value;
@@ -42,18 +40,16 @@ window.addEventListener("DOMContentLoaded", () => {
         alumnos.push(alumno);
         render(alumnos);
 
-    })
-
-    botonEliminar.addEventListener("click",() =>{
-
-
+        document.getElementById("legajo").value = '';
+        document.getElementById("apellidos").value = '';
+        document.getElementById("nombres").value = '';
+        document.getElementById("nota").value = '';
     })
 
     const render = arrayAlumnos => {
         console.log('renderizando alumnos', arrayAlumnos);
         const tablaAlumnos = document.getElementById('tablaAlumnos');
-        tablaAlumnos.innerHTML = ''
-        let tmpHtml = `
+        tablaAlumnos.innerHTML = `
         <tr>
             <th>Legajo</th>
             <th>Apellidos</th>
@@ -61,29 +57,40 @@ window.addEventListener("DOMContentLoaded", () => {
             <th>Nota</th>
             <th>Acciones</th>
         </tr>`
+
+        const $frg = document.createDocumentFragment()
+
         arrayAlumnos.forEach((alumno,index) => {
 
             const { legajo, apellidos, nombres, nota } = alumno
-            tmpHtml += `
-            <tr>
+
+            const $tr = document.createElement('tr')
+            $tr.innerHTML = ''
+            $tr.innerHTML = `
                 <td>${legajo}</td>
                 <td>${apellidos}</td>
                 <td>${nombres}</td>
                 <td>${nota}</td>
-                <td>
-                    <button type="button" class="btn btn-danger m-1 w-50 p-2" id="buttonListadoUsuarios">
-                        <i class="fa-solid fa-trash text-light" aria-hidden="true" id="botonEliminar${index}"></i>
-                    </button>
-                </td>
-            </tr>`
+            `
+            $tr.classList.add("p-5");
+            
+            const $button = document.createElement('button')
+            $button.classList.add("btn", "btn-danger", "m-1", "w-100", "p-2", "bg-danger");
+            $button.innerHTML = '<i class="fa-solid fa-trash text-light" aria-hidden="true"></i>';
 
+            const $td = document.createElement('td');
+            $td.appendChild($button)
+            $tr.appendChild($td)
+            $frg.appendChild($tr)
 
-        }); //arrayUsuarios.forEach
+            $button.addEventListener('click', () => {
+                alumnos = alumnos.filter((el, idx) => idx != index)
+                render(alumnos);
+            })
+        }); 
 
-        console.log(tmpHtml);
-        tablaAlumnos.innerHTML = tmpHtml
+        tablaAlumnos.appendChild($frg)
     }
 
     render(alumnos);
-
 })
